@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Lionel_Messi_WC2022.jpg",
+        "name": "Lionel Messi",
+        "price": "5000"
+    },
+    {
+        "id": 2,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+        "name": "Cristiano Ronaldo",
+        "price": "5000"
+    },
+    {
+        "id": 3,
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSx5EKZHirVVSRbMBJrvERDeZ5p1L6k_nAjIZMxKQKh4ElDakW",
+        "name": "Robert Lewandowski",
+        "price": "5000"
+    },
+    {
+        "id": 4,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/ISL-HRV_%287%29.jpg",
+        "name": "Luka Modrić",
+        "price": "4500"
+    },
+    {
+        "id": 5,
+        "image": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRbVmu2nr2kD3Tlw1Ct8Y6JSvWNuMVGxAwtIBwnZdPAD574FjeVx5utrJIZkQrnDp0G",
+        "name": "Harry Kane",
+        "price": "4500"
+    },
+    {
+        "id": 6,
+        "image": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSKccXyT11zOsHEqcpC5o-U2UW7lpMymik9hZVDK2TlHMq-IEISgC4XC1F_iKYrXddJ",
+        "name": "Erling Haaland",
+        "price": "4800"
+    },
+    {
+        "id": 7,
+        "image": "https://img.a.transfermarkt.technology/portrait/big/648195-1669894717.jpg?lm=1",
+        "name": "Enzo Fernández",
+        "price": "4200"
+    },
+    {
+        "id": 8,
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbOvRhrYDGDaF6I1Ms69KlwhVzyVF1sDhVK8B_IF90ncB2814s",
+        "name": "Lautaro Martínez",
+        "price": "4700"
+    },
+    {
+        "id": 9,
+        "image": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQWXjI5tiIU0xHFOYICzC_afCfH2ni4hhlwWTWtvhIJWomrkbeChVy1Vm5bSzMKZ071",
+        "name": "Angel Di Maria",
+        "price": "5000"
+    }
+]
