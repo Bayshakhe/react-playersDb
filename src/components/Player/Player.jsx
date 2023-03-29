@@ -1,18 +1,17 @@
 import React from 'react';
 
 const Player = (props) => {
-    const {image, name, price} = props.player;
+    const {id, image, name, price} = props.player;
+    const gotHired = props.gotHired
     return (
-        <div>
-            <div className="card card-compact h-96 w-full bg-base-100 shadow-xl">
+        <div className="card card-compact h-96 w-full bg-base-100 shadow-xl p-3">
             <figure><img src={image} alt="" /></figure>
-            <div className="card-body">
+            <div className="card-body text-left">
                 <h2 className="card-title">{name}</h2>
-                <p className='text-left'>Price: ${price}</p>
+                <p>Price: ${price}</p>
                 <div className="card-actions">
-                <button className="btn-sm btn-primary">HIRE</button>
+                    <button onClick={()=>gotHired(id)} className="btn-sm btn-primary">HIRE</button>
                 </div>
-            </div>
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Hired from '../Hired/Hired';
 import Player from '../Player/Player';
 
 const Container = () => {
@@ -8,15 +9,19 @@ const Container = () => {
         .then(res => res.json())
         .then(data => setPlayers(data))
     },[])
+
+    const gotHired = (id) => {
+        console.log(id)
+    }
     return (
         <div className='flex gap-3'>
             <div className='grid grid-cols-3 gap-3'>
                 {
-                    players.map(player => <Player key={player.id} player={player}></Player>)
+                    players.map(player => <Player key={player.id} player={player} gotHired={gotHired}></Player>)
                 }
             </div>
-            <div className='p-5 bg-yellow-400'>
-                <h2>Selected</h2>
+            <div>
+                <Hired></Hired>
             </div>
         </div>
     );
