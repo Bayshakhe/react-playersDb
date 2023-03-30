@@ -10,7 +10,7 @@ const Player = (props) => {
                 <h2 className="card-title">{name}</h2>
                 <p>Price: ${price}</p>
                 <div className="card-actions">
-                    <button onClick={()=>gotHired(id)} className="btn-sm btn-primary">HIRE</button>
+                    <button onClick={()=>gotHired(name,price)} className="btn-sm btn-primary">HIRE</button>
                 </div>
             </div>
         </div>

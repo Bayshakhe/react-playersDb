@@ -3,6 +3,8 @@ import Hired from '../Hired/Hired';
 import Player from '../Player/Player';
 
 const Container = () => {
+    const [localStorageData, setlocalStorageData] = useState(false)
+
     const [players, setPlayers] = useState([]);
     useEffect(()=>{
         fetch('playersFakeDb.json')
@@ -10,8 +12,34 @@ const Container = () => {
         .then(data => setPlayers(data))
     },[])
 
-    const gotHired = (id) => {
-        console.log(id)
+    useEffect(()=>{
+
+    },[localStorageData])
+
+    const gotHired = (name,price) => {
+        let newaddedPlayer = [] ;
+        const previousPrice = JSON.parse(localStorage.getItem('price'))
+        if(previousPrice){
+            const newPrice = JSON.parse(previousPrice) + JSON.parse(price);
+            localStorage.setItem('price', newPrice)
+        }
+        else{
+            localStorage.setItem('price', price)
+        }
+
+        const addedPlayers = JSON.parse(localStorage.getItem('players'))
+        // console.log(addedPlayers)
+        if(addedPlayers == null){
+            newaddedPlayer.push(name);
+            // console.log(newaddedPlayer);
+            localStorage.setItem('players', JSON.stringify(newaddedPlayer))
+        }
+        else{
+            // console.log(addedPlayers);
+            const newPlayer = [...addedPlayers, name];
+            // console.log(newPlayer);
+            localStorage.setItem('players', JSON.stringify(newPlayer));
+        }
     }
     return (
         <div className='flex gap-3'>
@@ -21,6 +49,7 @@ const Container = () => {
                 }
             </div>
             <div>
+                {/* <Hired playersName={playersName}></Hired> */}
                 <Hired></Hired>
             </div>
         </div>
